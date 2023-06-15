@@ -1,0 +1,136 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(./images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    /* min-height: 100vh; */
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 50px;
+    padding: 0 150px;
+}
+.pic{
+    display: flex;
+    justify-content: space-between;
+}
+.pic img{
+    height: 40vh;
+}
+.para p{
+    width: 45%;
+    Font-size: 15px;
+}
+/* .para h2{
+    width: 20%;
+} */
+.up{
+    display: flex;
+}
+.down{
+    display: flex;
+    gap: 30px;
+}
+.star{
+    display: flex;
+    gap: 10px;
+}
+.poop p,
+.poops p,
+.pops p{
+    font-size: 15px;
+}
+.one{
+    display: flex;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+    padding: 7px 10px;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+.two{
+    display: flex;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+    padding: 7px 10px;
+    align-items: center;
+    gap: 15px;
+}
+.three{
+    display: flex;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+    gap: 15px;
+    padding: 7px 10px;
+    align-items: center;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.poop{
+    background-color: hsl(300, 43%, 22%);
+    padding: 20px 25px;
+    color: white;
+    border-radius: 20px;
+}
+.poops{
+    background-color: hsl(300, 43%, 22%);
+    padding: 20px 25px;
+    color: white;
+    border-radius: 20px;
+}
+.pops{
+    background-color: hsl(300, 43%, 22%);
+    padding: 20px 25px;
+    color: white;
+    border-radius: 20px;
+}
+.poop1{
+    display: flex;
+    align-items: center;
+}
+.img img{
+    border-radius: 30px;
+    height: 50px;
+}
+
+@media screen and (max-width:950px) {
+    .down{
+        flex-direction: column;
+    }
+    .up{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .list{
+        flex-direction: column;
+    }
+    main{
+        padding: 20px 10px 30px 10px;
+        height: 0%;
+    }
+    .one,
+    .two,
+    .three{
+        flex-direction: column;
+    }
+    .para{
+        gap: 20px;
+    }
+    .para p{
+        width: 100%;
+    }
+}
